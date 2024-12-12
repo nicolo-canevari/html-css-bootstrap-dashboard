@@ -50,10 +50,6 @@
             background-color: #f2f2f2;
         }
 
-        .box {
-            border: 1px solid #ccc;
-            padding: 30px;
-        }
     </style>
 
     <title>Nuovo Libro</title>
@@ -153,7 +149,9 @@
                             <label for="exampleInputName" class="form-label">
                                 <strong>Nome Autore</strong>
                             </label>
-                            <input type="" class="form-control" id="exampleInputName1" aria-describedby="">
+                            <input type="text" class="form-control" placeholder="Inserisci il nome dell'Autore"
+                                aria-label="First name">
+
 
                         </div>
 
@@ -163,7 +161,8 @@
                             <label for="exampleInputSurname" class="form-label">
                                 <strong>Cognome Autore</strong>
                             </label>
-                            <input type="" class="form-control" id="exampleInputName1">
+                            <input type="text" class="form-control" placeholder="Inserisci il cognome dell'Autore"
+                                aria-label="First name">
 
                         </div>
 
@@ -174,7 +173,8 @@
                             <label for="exampleInputTitle" class="form-label">
                                 <strong>Titolo</strong>
                             </label>
-                            <input type="" class="form-control" id="exampleInputName1" aria-describedby="">
+                            <input type="text" class="form-control" placeholder="Inserisci il Titolo del libro"
+                                aria-label="First name">
                             <div id="TitleHelp" class="form-text">Titolo versione italiana</div>
 
                         </div>
@@ -188,10 +188,10 @@
                             </label>
 
                             <select class="form-select" aria-label="Default select example">
-                                <option selected>Scegli genere</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option value="" selected>Seleziona genere</option>
+                                <option value="1">Sci-fy</option>
+                                <option value="2">Horror</option>
+                                <option value="3">Fantasy</option>
                             </select>
 
                         </div>
@@ -202,7 +202,8 @@
                             <label for="exampleInputName" class="form-label">
                                 <strong>Anno pubblicazione</strong>
                             </label>
-                            <input type="" class="form-control" id="" aria-describedby="">
+                            <input type="text" class="form-control" placeholder="Inserisci l'anno"
+                                aria-label="First name">
 
                         </div>
 
@@ -210,41 +211,41 @@
                         <div class="col-12 col-md-4 mb-5">
 
                             <label for="exampleInputName" class="form-label">
-                                <strong>ISGN#</strong>
+                                <strong>ISBN#</strong>
                             </label>
-                            <input type="" class="form-control" id="" aria-describedby="">
+                            <input type="text" class="form-control" placeholder="Inserisci il codice ISBN#"
+                                aria-label="First name">
 
                         </div>
 
-                        
+                        <!-- linea divisoria -->
                         <div>
                             <hr>
                         </div>
 
-                        
+                        <!-- note -->
 
+                        <div class="col-12">
 
+                            <label for="exampleFormControlTextarea1" class="form-label"><strong>Note</strong></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Inserisci eventuali note sul libro"></textarea>
 
-
-
+                        </div>
 
                     </div>
 
 
-
-
-
-
-
-
-
-
+                    <!-- check privacy & button -->
                     <div class="mb-3 form-check">
+
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        <label class="form-check-label" for="exampleCheck1">Disponibile anche in digitale</label>
+
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Aggiungi libro</button>
+
                 </form>
 
             </div>
